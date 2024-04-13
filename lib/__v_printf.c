@@ -425,3 +425,5 @@ num_printf:
 }
 
 link_warning("__v_printf","warning: the printf functions add several kilobytes of bloat.")
+
+#undef s

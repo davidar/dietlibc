@@ -2,7 +2,8 @@
 #include <threads.h>
 #include <errno.h>
 #undef errno
-#include <errno_definition.h>
+// #include <errno_definition.h>
+int errno;
 
 // int *__errno_location(void) __attribute__((weak));
 __attribute__((weak)) int *__errno_location(void) { return &errno; }

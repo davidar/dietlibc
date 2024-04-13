@@ -1,4 +1,5 @@
 /* diet stdio */
+#pragma once
 
 #include <sys/cdefs.h>
 #include <sys/types.h>
@@ -7,6 +8,7 @@
 #include <pthread.h>
 #endif
 #include <stdarg.h>
+#include <inttypes.h>
 
 #ifdef WANT_SMALL_STDIO_BUFS
 #define BUFSIZE 128

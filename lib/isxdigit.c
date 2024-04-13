@@ -5,4 +5,6 @@ int __isxdigit_ascii ( int ch )
            (unsigned int)((ch | 0x20) - 'a') <  6u;
 }
 
-int isxdigit ( int ch ) __attribute__((weak,alias("__isxdigit_ascii")));
+int isxdigit ( int ch ) {
+    return __isxdigit_ascii ( ch );
+}
